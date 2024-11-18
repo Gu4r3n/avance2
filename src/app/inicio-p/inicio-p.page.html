@@ -1,0 +1,75 @@
+
+
+<ion-content>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>herramientas</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      
+      
+      <ion-button (click)="salir()">
+        Salir
+      </ion-button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title color="primary">Inicio</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"> bienvenido {{name()}} <br>
+
+      <ion-item>
+        <ion-card style="width:25%;">
+        <img alt="Silhouette of mountains" src="/assets/img/istockphoto-1337844283-612x612.jpg"/>
+        <ion-card-header>
+          <ion-card-title>Arquitectura_003D</ion-card-title>
+          <ion-card-subtitle>2024_2_SJ4131</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-button (click)="mensajeA()">
+            Mostrar QR Asignatura
+          </ion-button> <br>
+        Cursando | 24 Alumnos 
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card style="width:30%;">
+        <img alt="Silhouette of mountains" src="/assets/img/istockphoto-1444128859-612x612.jpg" />
+        <ion-card-header>
+          <ion-card-title>Calidad de Software_001D</ion-card-title>
+          <ion-card-subtitle>2024_2_CSY4123</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-button (click)="mensajeC()">
+            Mostrar QR Asignatura
+          </ion-button> <br>
+        Cursando | 26 Alumnos
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card style="width:30%;">
+        <img alt="Silhouette of mountains" src="/assets/img/istockphoto-1386341272-612x612.jpg"/>
+        <ion-card-header>
+          <ion-card-title>Programacion de Aplicaciones Moviles_005D</ion-card-title>
+          <ion-card-subtitle>2024_2_CSY4312</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-button (click)="mensajeP()">
+            Mostrar QR Asignatura
+          </ion-button> <br>
+          Cursando | 29 Alumnos
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    </ion-content>
+  </div>
+</ion-content>
+
